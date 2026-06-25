@@ -38,9 +38,9 @@ const Achievements = () => {
   return (
     <section id="achievements" aria-labelledby="achievements-heading">
       <div className="container">
-        <p className="section-kana">名誉 · Achievements</p>
-        <motion.h2 
-          className="section-title" 
+        <p className="section-kana">Achievements</p>
+        <motion.h2
+          className="section-title"
           id="achievements-heading"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -49,7 +49,7 @@ const Achievements = () => {
           Honors & <span className="accent">Recognition</span>
         </motion.h2>
 
-        <motion.div 
+        <motion.div
           className="achievements-grid"
           variants={container}
           initial="hidden"

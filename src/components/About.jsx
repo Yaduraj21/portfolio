@@ -4,9 +4,9 @@ const About = () => {
   return (
     <section id="about" aria-labelledby="about-heading">
       <div className="container">
-        <p className="section-kana">人物伝 · Background</p>
-        <motion.h2 
-          className="section-title" 
+        <p className="section-kana">Background</p>
+        <motion.h2
+          className="section-title"
           id="about-heading"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -18,7 +18,7 @@ const About = () => {
         <div className="about-grid">
 
           {/* Bio */}
-          <motion.div 
+          <motion.div
             className="parchment-card about-card"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -48,7 +48,7 @@ const About = () => {
           </motion.div>
 
           {/* Info sheet */}
-          <motion.div 
+          <motion.div
             className="about-sheet"
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}

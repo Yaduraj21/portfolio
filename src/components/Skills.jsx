@@ -47,9 +47,9 @@ const Skills = () => {
   return (
     <section id="skills" aria-labelledby="skills-heading">
       <div className="container">
-        <p className="section-kana">技能 · Technical Skills</p>
-        <motion.h2 
-          className="section-title" 
+        <p className="section-kana">Technical Skills</p>
+        <motion.h2
+          className="section-title"
           id="skills-heading"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -58,7 +58,7 @@ const Skills = () => {
           Technical <span className="accent">Skills</span>
         </motion.h2>
 
-        <motion.div 
+        <motion.div
           className="skill-grid"
           variants={container}
           initial="hidden"

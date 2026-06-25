@@ -20,22 +20,22 @@ const Hero = () => {
   return (
     <section id="home" aria-labelledby="hero-name">
       {/* Particles will be rendered globally in App.jsx so they float everywhere like before, or we can isolate them here if the user specifically asked for "in the hero" */}
-      
+
       <div className="hero-wrap">
         {/* Left: text content */}
         <div className="hero-content">
-          <motion.p 
+          <motion.p
             className="hero-stamp"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            侍 · 探求者 · 創造者
+            Ambitious · Persistent · Curious
           </motion.p>
 
-          <motion.h1 
-            className="hero-name" 
+          <motion.h1
+            className="hero-name"
             id="hero-name"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -47,7 +47,7 @@ const Hero = () => {
             <span className="name-role">AI / ML Engineer, Data Analyst & Full-Stack Developer</span>
           </motion.h1>
 
-          <motion.div 
+          <motion.div
             className="hero-typewriter"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -76,7 +76,7 @@ const Hero = () => {
             />
           </motion.div>
 
-          <motion.div 
+          <motion.div
             className="hero-tags"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -91,7 +91,7 @@ const Hero = () => {
             <span className="hero-tag">Open to Work</span>
           </motion.div>
 
-          <motion.div 
+          <motion.div
             className="hero-ctas"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -107,7 +107,7 @@ const Hero = () => {
         </div>
 
         {/* Right: profile photo */}
-        <motion.div 
+        <motion.div
           className="hero-emblem-wrap"
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}

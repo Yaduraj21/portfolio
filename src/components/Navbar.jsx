@@ -16,7 +16,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const sections = document.querySelectorAll('section[id]');
-    
+
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -41,13 +41,13 @@ const Navbar = () => {
   return (
     <nav id="navbar" className={scrolled ? 'scrolled' : ''} role="navigation" aria-label="Main navigation">
       <a href="#home" className="nav-logo" aria-label="Yaduraj Singh Yadav — Home">
-        YSY <span>// Portfolio</span>
+        Portfolio
       </a>
 
-      <button 
-        className="nav-toggle" 
-        id="nav-toggle" 
-        aria-label="Toggle navigation menu" 
+      <button
+        className="nav-toggle"
+        id="nav-toggle"
+        aria-label="Toggle navigation menu"
         aria-expanded={menuOpen}
         onClick={() => setMenuOpen(!menuOpen)}
       >
@@ -57,8 +57,8 @@ const Navbar = () => {
       <ul className={`nav-links ${menuOpen ? 'open' : ''}`} id="nav-links" role="list">
         {navItems.map(item => (
           <li key={item.id}>
-            <a 
-              href={`#${item.id}`} 
+            <a
+              href={`#${item.id}`}
               className={activeSection === item.id ? 'active' : ''}
               onClick={() => setMenuOpen(false)}
             >

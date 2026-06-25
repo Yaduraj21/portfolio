@@ -61,9 +61,9 @@ const Projects = () => {
   return (
     <section id="projects" aria-labelledby="projects-heading">
       <div className="container">
-        <p className="section-kana">武勲 · Projects</p>
-        <motion.h2 
-          className="section-title" 
+        <p className="section-kana">Projects</p>
+        <motion.h2
+          className="section-title"
           id="projects-heading"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -72,7 +72,7 @@ const Projects = () => {
           Featured <span className="accent">Projects</span>
         </motion.h2>
 
-        <motion.div 
+        <motion.div
           className="projects-grid"
           variants={container}
           initial="hidden"
