@@ -119,7 +119,7 @@ const Hero = () => {
             <div className="photo-ring photo-ring-inner" aria-hidden="true"></div>
             <div className="photo-circle">
               <img
-                src="YOUR_PHOTO_FILENAME.jpg"
+                src="/1000061180.jpg.jpeg"
                 alt="Yaduraj Singh Yadav"
                 className="photo-img"
                 id="profile-photo"
