@@ -21,7 +21,8 @@ const Projects = () => {
       rankLabel: "Backend",
       title: "Auth Kavatch",
       desc: <>An anomaly-based intrusion detection engine that applies the <strong>Isolation Forest</strong> algorithm to identify unusual access patterns in real time. Built with FastAPI and Node.js, it integrates seamlessly with existing authentication services and flags threats with high precision and low latency.</>,
-      tech: ["Python", "Scikit-learn", "FastAPI", "Node.js", "Isolation Forest"]
+      tech: ["Python", "Scikit-learn", "FastAPI", "Node.js", "Isolation Forest"],
+      link: "https://github.com/Yaduraj21/credential_stuffing_detector.git"
     },
     {
       category: "Healthcare / Full-Stack",
@@ -30,7 +31,8 @@ const Projects = () => {
       title: "ArogyaConnect",
       award: "🏆 E-Summit Shark Tank 2026 — 1st Place",
       desc: <>A full-stack healthcare platform built on the MERN stack, designed to expand medical access in tier-3 Indian cities. Features a <strong>PyTorch-powered AI diagnostic module</strong>, real-time appointment management, and immersive Three.js data visualizations for health trends.</>,
-      tech: ["React", "Node.js", "MongoDB", "PyTorch", "Three.js"]
+      tech: ["React", "Node.js", "MongoDB", "PyTorch", "Three.js"],
+      link: "https://github.com/devhardik21/AarogyaConnect.git"
     },
     {
       category: "Computer Vision",
@@ -38,7 +40,8 @@ const Projects = () => {
       rankLabel: "Real-Time",
       title: "Driver Drowsiness Detection",
       desc: <>A real-time computer vision system that monitors facial landmarks to detect driver fatigue and microsleep. Uses <strong>MediaPipe's face mesh</strong> to track eye aspect ratio and blink frequency, triggering audio alerts when drowsiness is detected — sub-100ms latency on standard hardware.</>,
-      tech: ["Python", "MediaPipe", "OpenCV", "Computer Vision"]
+      tech: ["Python", "MediaPipe", "OpenCV", "Computer Vision"],
+      link: "https://github.com/Yaduraj21/Driver-Distraction-Detector.git"
     },
     {
       category: "Web Application",
@@ -46,7 +49,8 @@ const Projects = () => {
       rankLabel: "Full-Stack",
       title: "PG Life",
       desc: <>A multi-city paying guest accommodation discovery platform covering major Indian cities. Includes advanced search and filter, user authentication, property listings management, and a responsive UI — all backed by a <strong>Flask + PHP + MySQL</strong> architecture.</>,
-      tech: ["Flask", "PHP", "MySQL", "Bootstrap"]
+      tech: ["Flask", "PHP", "MySQL", "Bootstrap"],
+      link: "#"
     },
     {
       category: "Generative AI",
@@ -54,7 +58,8 @@ const Projects = () => {
       rankLabel: "LLM",
       title: "Code Generator AI",
       desc: <>A privacy-first, locally-hosted coding assistant that converts natural language prompts into functional code. Built with <strong>LangChain for prompt orchestration</strong> and Ollama to run LLMs entirely on-device — no API costs, no data exposure. Streamlit frontend for fast developer interaction.</>,
-      tech: ["LangChain", "Streamlit", "Ollama", "Python"]
+      tech: ["LangChain", "Streamlit", "Ollama", "Python"],
+      link: "https://github.com/Yaduraj21/Code-Generator.git"
     }
   ];
 
@@ -93,7 +98,7 @@ const Projects = () => {
                   <span key={i} className="tech-tag">{t}</span>
                 ))}
               </div>
-              <div className="project-cta">View Project Details</div>
+              <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-cta" style={{ display: 'inline-block', textDecoration: 'none' }}>Project links</a>
             </motion.article>
           ))}
         </motion.div>
